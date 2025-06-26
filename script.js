@@ -8,7 +8,6 @@ const refs = {
 function $(sel) { return document.querySelector(sel); }
 function $all(sel) { return Array.from(document.querySelectorAll(sel)); }
 
-// Add task
 $(refs.addBtn).addEventListener('click', () => {
   const text = $(refs.input).value.trim();
   if (!text) return alert('Cannot add an empty task');
